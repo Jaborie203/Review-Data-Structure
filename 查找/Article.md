@@ -17,10 +17,22 @@
 在静态查找表中，数据对象存放于数组中，利用元素的下标作为数据对象的存放地址。查找算法根据给定值x，在数组中进行查找。知道找到x在数组中的存放位置或确定在数组中找不到x为止。
 
 ### 1) 顺序表的查找(Sequential Search)
+顺序查找又称**线性查找**
 - 存储结构
 ```c++
 typedef struct{
     ElemType *elem;
     int length;
     } SSTable;
+```
+* 算法
+```c++
+Search_Seq(SSTable ST, KeyType key)
+{
+    // 0号为监视哨
+    int i;
+    ST.elem[0].key = key;
+    for(i = ST.length; ST.elem[i].key != key; --i);
+    reurn i;
+}
 ```
