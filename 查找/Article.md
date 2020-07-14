@@ -38,6 +38,6 @@ Search_Seq(SSTable ST, KeyType key)
 }
 ```
 - 平均查找长度
-<img src="Search.png" width="70%">
+<img src="Search.png" width="50%">
 设查找第$i$个元素的概率为$p_i$， 查找到第$i$个元素所需要的比较次数为$c_i$，则查找成功的平均查找长度为：
 
