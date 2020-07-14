@@ -8,9 +8,9 @@
 **关键字**是数据元素中某个数据项的值，用以标识一个数据元素。
 ## 静态查找表
 ### 顺序表的查找
-'''c++
+```c++
 typedef struct{
     ElemType *elem;
     int length;
 }SSTable;
-'''
+```
