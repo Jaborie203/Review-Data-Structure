@@ -1,7 +1,5 @@
 # 目录
 
-[TOC]
-
 - [查找](#查找)
 - [静态查找表](#静态查找表)
 - [二叉排序树]()
@@ -28,7 +26,7 @@ typedef struct{
     int length;
     } SSTable;
 ```
-* 算法
+- 算法
 ```c++
 Search_Seq(SSTable ST, KeyType key)
 {
@@ -39,3 +37,7 @@ Search_Seq(SSTable ST, KeyType key)
     reurn i;
 }
 ```
+- 平均查找长度
+![](Search.png)
+设查找第$i$个元素的概率为$p_i$， 查找到第$i$个元素所需要的比较次数为$c_i$，则查找成功的平均查找长度为：
+
