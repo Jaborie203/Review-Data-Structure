@@ -14,5 +14,5 @@
 typedef struct{
     ElemType *elem;
     int length;
-}SSTable;
+    } SSTable;
 ```
