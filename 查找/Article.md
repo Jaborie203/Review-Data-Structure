@@ -38,7 +38,8 @@ Search_Seq(SSTable ST, KeyType key)
 }
 ```
 - 平均查找长度
-设查找第$$i$$个元素的概率为$$p_i$$， 查找到第$$i$$个元素所需要的比较次数为$$c_i$$,则$$c_i = n - i + 1, p_i = 1 / n$$。
+
+设查找第$i$个元素的概率为$p_i$， 查找到第$$i$$个元素所需要的比较次数为$c_i$,则$c_i = n - i + 1, p_i = 1 / n$。
 <img src="Search.png" width="50%">
 
 
