@@ -29,19 +29,19 @@ const int MAXV = 1000; //最大顶点数
 const int INF = 1000000000; //INF为一个很大的数  
 - 邻接矩阵版实现  
 适用于点数不大（如不超过1000的情况），代码如下
-//邻接矩阵版
 ```c++
+//邻接矩阵版
 int n, G[MAXV][MAXV]; //n为顶点数，MAXV为最大顶点数
 int d[MAXV]; //起点到达各点的最短路径长度
 bool vis[MAXV] = { false }; //标记数组，vis[i]==true表示已访问，初值均为false
-//s为起点
-void Dijkstra(int s) {
+
+void Dijkstra(int s) {//s为起点
     fill(d, d + MAXV, INF); //fill函数将整个d数组赋值为INF
     d[s] = 0; //起点s到达自身的距离为0
     for (int i = 0; i < n; i++) {
         int u = -1, MIN = INF; //u使d[u]最小，MIN存放该最小的d[u]
-        //找到未访问的顶点中d[]最小的
-        for (int j = 0; j < n; j++) {
+        
+        for (int j = 0; j < n; j++) {//找到未访问的顶点中d[]最小的
             if (vis[j] == false && d[j] < MIN) {
                 u = j;
                 MIN = d[j];
